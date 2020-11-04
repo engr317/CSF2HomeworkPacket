@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace ClassesLibrary
 {
-    class Login
+    public class Login
     {
+        //FIELDS
+        private string _username;
+        private string _password;
+
+        //PROPERTIES
+        public string UserName
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
+
+        public string Password
+        {
+            get { return _password; }
+            set { _password = value; }
+        }
+
     }
 }
