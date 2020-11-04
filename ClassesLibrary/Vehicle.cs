@@ -38,5 +38,20 @@ namespace ClassesLibrary
             get { return _weight; }
             set { _weight = value; }
         }
+
+        public Vehicle(string make, string model, string year, float weight)
+        {
+            Make = _make;
+            Model = _model;
+            Year = _year;
+            Weight = _weight;
+        }
+
+        public Vehicle() { }
+
+        public override string ToString()
+        {
+            return string.Format("A " + Year +  Make +  Model + " has a GVW of " + Weight + ".");
+        }
     }
 }

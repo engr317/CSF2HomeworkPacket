@@ -40,5 +40,21 @@ namespace ClassesLibrary
             set { _gpa = value; }
         }
 
+        public Student(string firstName, string lastName, string id, float gpa)
+        {
+            FirstName = _firstName;
+            LastName = _lastName;
+            Id = _id;
+            Gpa = _gpa;
+        }
+
+        public Student() { }
+
+        public override string ToString()
+        {
+            return string.Format(FirstName + " " + LastName + " has a student ID of " + Id + " and a GPA of " + Gpa + ".");
+        }
+
+
     }
 }

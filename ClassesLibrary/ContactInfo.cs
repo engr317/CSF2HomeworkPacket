@@ -16,6 +16,8 @@ namespace ClassesLibrary
         private string _phone;
         private string _email;
 
+   /**********************************/
+
 
         //PARAMETERS
         public string StreetAddress
@@ -47,6 +49,23 @@ namespace ClassesLibrary
         {
             get { return _email; }
             set { _email = value; }
+        }
+
+        public ContactInfo(string StreetAddress, string City, string State, string Zip, string Phone, string email)
+        {
+            StreetAddress = _streetAddress;
+            City = _city;
+            State = _state;
+            Zip = _zip;
+            Phone = _phone;
+            Email = _email;
+        }
+
+        public ContactInfo() { }
+
+        public override string ToString()
+        {
+            return string.Format("My address is: " + StreetAddress + "," + City + "," + State + "," + Zip + " and my phone number is" + Phone + ".  If you want to reach me by email: " + Email + ".");
         }
     }
 }
